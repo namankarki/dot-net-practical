@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>This is the Practical File of Naman Bikram Karki</a>.</p>
+    <p>@ViewBag.Message</p>
+
+    <a asp-action="RedirectToAnotherAction">Redirect To Error Page</a><br/>
+
+    <a asp-action="ReturnJsonData">Json Data</a><br />
+    <a asp-action="PlainText">Plain Text</a><br />
+    <a asp-action="Partial">Partial View</a><br/>
+    <a asp-action="DownloadFile">Download File</a>
+    <h1>@TempData["Smokes"]</h1></br>
+ 
+    @Html.Partial("_Partialview")
+</div>
